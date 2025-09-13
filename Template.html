@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Template</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f0f2f5;
+      }
+
+      .email-container {
+        max-width: 600px;
+        margin: 40px auto;
+        background-color: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .email-header {
+        background-color: #0d6efd;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .email-header h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      .email-body {
+        padding: 20px;
+        color: #333;
+        line-height: 1.6;
+        font-size: 16px;
+      }
+
+      .email-body h2 {
+        color: #0d6efd;
+        font-size: 20px;
+        margin-top: 0;
+      }
+
+      .email-body a.email-button {
+        display: inline-block;
+        padding: 12px 24px;
+        margin: 20px 0;
+        background-color: #0d6efd;
+        color: white !important;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: bold;
+      }
+
+      .email-footer {
+        background-color: #f1f1f1;
+        color: #555;
+        padding: 15px;
+        text-align: center;
+        font-size: 14px;
+      }
+
+      .email-footer a {
+        color: #0d6efd;
+        text-decoration: none;
+        margin: 0 5px;
+      }
+
+      /* Small phones */
+      @media screen and (max-width: 400px) {
+        .email-container {
+          width: 100% !important;
+          border-radius: 0;
+        }
+
+        .email-header h1 {
+          font-size: 18px !important;
+        }
+
+        .email-body {
+          padding: 12px !important;
+          font-size: 14px !important;
+        }
+
+        .email-body a.button {
+          font-size: 14px !important;
+          padding: 10px 20px !important;
+        }
+      }
+
+      /* Large phones */
+      @media screen and (min-width: 401px) and (max-width: 600px) {
+        .email-container {
+          width: 100% !important;
+          border-radius: 0;
+        }
+
+        .email-header h1 {
+          font-size: 20px !important;
+        }
+
+        .email-body {
+          padding: 15px !important;
+        }
+      }
+
+      /* Tablets (portrait) */
+      @media screen and (min-width: 601px) and (max-width: 768px) {
+        .email-container {
+          width: 90% !important;
+        }
+
+        .email-header h1 {
+          font-size: 22px !important;
+        }
+
+        .email-body {
+          font-size: 16px !important;
+        }
+      }
+
+      /* Tablets (landscape) */
+      @media screen and (min-width: 769px) and (max-width: 1024px) {
+        .email-container {
+          width: 85% !important;
+        }
+
+        .email-header h1 {
+          font-size: 24px !important;
+        }
+
+        .email-body {
+          font-size: 17px !important;
+        }
+      }
+
+      /* Small desktops */
+      @media screen and (min-width: 1025px) and (max-width: 1199px) {
+        .email-container {
+          width: 700px !important;
+        }
+
+        .email-header h1 {
+          font-size: 26px !important;
+        }
+
+        .email-body {
+          padding: 25px !important;
+          font-size: 17px !important;
+          line-height: 1.7 !important;
+        }
+      }
+
+      /* Large desktops */
+      @media screen and (min-width: 1200px) {
+        .email-container {
+          width: 800px !important;
+        }
+
+        .email-body {
+          padding: 30px !important;
+          font-size: 18px !important;
+          line-height: 1.8 !important;
+        }
+        a .email-header h1 {
+          font-size: 28px !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- container section -->
+    <div class="email-container">
+      <!-- Header -->
+      <div class="email-header">
+        <h1>Company Name</h1>
+      </div>
+
+      <!-- Body -->
+      <div class="email-body">
+        <h2>Hello, John Doe!</h2>
+        <p>
+          Thank you for joining our community. We're excited to have you on
+          board.
+        </p>
+        <p>Stay tuned for the latest updates and exclusive content.</p>
+
+        <!-- Button -->
+        <a href="#" class="email-button">Explore Now</a>
+
+        <p>Best regards,<br />The Company Team</p>
+      </div>
+
+      <!-- Footer -->
+      <div class="email-footer">
+        <p>&copy; 2023 Company Name. All rights reserved.</p>
+        <p>
+          <a href="#"><u>Unsubscribe</u></a> |
+          <a href="#"><u>Contact Us</u></a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
